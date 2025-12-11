@@ -68,21 +68,6 @@ This backend can support mobile apps, dashboards, or IoT devices.
 
 ---
 
-## System Architecture
-
-```mermaid
-flowchart TD
-    A[Mobile / Web App] --> B[Spring Boot API (Dockerized)]
-    B --> C[Authentication - JWT & RBAC]
-    B --> D[Incident Module]
-    B --> E[SOS Controller]
-    B --> F[CRUD & User Management]
-    B --> G[MySQL Database]
-    G --> H[Swagger / OpenAPI]
-
-
----
-
 # 📚 API Endpoints
 
 ## 🔐 Authentication
