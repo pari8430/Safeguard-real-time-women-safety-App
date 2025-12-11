@@ -1,9 +1,18 @@
-FROM eclipse-temurin:21-jdk
-
+# ---------- STAGE 1: BUILD ----------
+FROM maven:3.9.6-eclipse-temurin-21 AS builder
 WORKDIR /app
 
-COPY target/safeguard-0.0.1-SNAPSHOT.jar app.jar
+COPY pom.xml .
+COPY src ./src
 
-EXPOSE 8080
+RUN mvn -q -DskipTests clean package
 
+# ---------- STAGE 2: RUN ----------
+FROM eclipse-temurin:21-jdk
+WORKDIR /app
+
+COPY --from=builder /app/target/*.jar app.jar
+
+EXPOSE 8082
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
