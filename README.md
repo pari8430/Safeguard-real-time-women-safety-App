@@ -72,17 +72,17 @@ This backend can support mobile apps, dashboards, or IoT devices.
 
 ```mermaid
 flowchart TD
-    A[Mobile / Web App] --> B[Spring Boot API (Dockerized)]
+    A[Mobile / Web App]
+    A --> B[Spring Boot API (Dockerized)]
 
     B --> C[Authentication<br/>JWT + RBAC]
     B --> D[Incident Module]
     B --> E[SOS Controller]
-    B --> F[CRUD + User Mgmt<br/>Auto Create]
+    B --> F[CRUD & User Mgmt<br/>Auto-create]
 
     B --> G[MySQL Database]
 
     G --> H[Swagger / OpenAPI<br/>Interactive Testing]
-
 
 ---
 
