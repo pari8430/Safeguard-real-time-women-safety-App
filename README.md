@@ -4,15 +4,6 @@ Built with **Java Spring Boot**, **JWT Security**, **MySQL**, **Docker**, and de
 
 ---
 
-## 📌 Live Demo  
-🌐 **Swagger UI (Public API Testing):**  
-👉 https://safeguard-real-time-women-safety-app-4.onrender.com/swagger-ui/index.html
-
-📁 **GitHub Repository:**  
-👉 https://github.com/pari8430/Safeguard-real-time-women-safety-App
-
----
-
 # 🛡️ Overview  
 Safeguard is a **real-time women safety backend** designed for emergency response applications.  
 It provides:
