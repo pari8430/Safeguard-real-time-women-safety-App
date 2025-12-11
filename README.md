@@ -70,6 +70,7 @@ This backend can support mobile apps, dashboards, or IoT devices.
 
 ## System Architecture
 
+```mermaid
 flowchart TD
     A[Mobile / Web App] --> B[Spring Boot API (Dockerized)]
     B --> C[Authentication - JWT & RBAC]
