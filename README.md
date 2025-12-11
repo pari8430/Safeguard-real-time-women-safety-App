@@ -193,12 +193,23 @@ This project uses:
 
 # 📸 Screenshots  
 ![Swagger UI](assets/screenshots/swagger-home.png)
+- Swagger UI homepage  
+
 ![Auth endpoints](assets/screenshots/auth-endpoints1.png).
 ![Auth endpoints](assets/screenshots/auth-endpoints2.png). 
+- Authentication endpoints
+  
 ![User-controller](assets/screenshots/user.png).
+- User Analytics
+
 ![Incident endpoints](assets/screenshots/incident.png).
+- Incident Endpoints
+
 ![SOS endpoints](assets/screenshots/sos.png).
+- Sos endpoint
+  
 ![Summary](assets/screenshots/summary.png).
+- Analytics Summary
 
 
 ---
